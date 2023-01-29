@@ -1,0 +1,17 @@
+[requires]
+opencv/4.5.5
+
+[generators]
+cmake_find_package
+virtualrunenv
+
+[options]
+opencv:with_ade=False
+opencv:with_jpeg=False
+opencv:with_png=False
+opencv:with_tiff=False
+opencv:with_jpeg2000=False
+opencv:with_openexr=False
+opencv:with_ffmpeg=False
+opencv:dnn=False
+opencv:nonfree=True
