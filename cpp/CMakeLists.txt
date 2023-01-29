@@ -1,6 +1,7 @@
 cmake_minimum_required( VERSION 3.5.1 )
 
 project(lab_00_intro)
+list(PREPEND CMAKE_MODULE_PATH ${CMAKE_BINARY_DIR})
 
 # Compiler flags
 if (MSVC)
@@ -12,15 +13,11 @@ endif (MSVC)
 
 # Find libraries
 find_package(OpenCV 4 REQUIRED)
-find_package(Eigen3 REQUIRED)
-find_package(Sophus REQUIRED)
 
 add_executable(${PROJECT_NAME} main.cpp)
 
 target_link_libraries(${PROJECT_NAME}
-  ${OpenCV_LIBS}
-  Sophus::Sophus
-  Eigen3::Eigen
+  opencv::opencv
   )
 
 target_compile_options(${PROJECT_NAME} PRIVATE ${compiler_options})
