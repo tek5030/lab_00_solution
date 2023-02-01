@@ -6,7 +6,7 @@ cmake_find_package
 virtualrunenv
 
 [options]
-opencv:with_ffmpeg=False
 opencv:dnn=False
 opencv:nonfree=True
+opencv:with_ffmpeg=False
 opencv:with_v4l=True
