@@ -1,7 +1,7 @@
 import cv2
 
 
-def lab00():
+def lab_intro():
     device_id = 0
     cap = cv2.VideoCapture(device_id)
 
@@ -10,7 +10,7 @@ def lab00():
     else:
         print(f"Successfully opened camera {device_id}")
     
-    window_title = "Lab 0: Introduction to Python and OpenCV"
+    window_title = "TEK5030: Introduction to Python and OpenCV"
     cv2.namedWindow(window_title, cv2.WINDOW_GUI_NORMAL)
 
     while True:
@@ -34,6 +34,6 @@ def lab00():
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    lab00()
+    lab_intro()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
