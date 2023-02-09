@@ -12,7 +12,7 @@ int main()
     return EXIT_FAILURE;
   }
 
-  const std::string window_title = "Lab 0: Introduction to C++ and OpenCV";
+  const std::string window_title = "TEK5030: Introduction to C++ and OpenCV";
   cv::namedWindow(window_title, cv::WINDOW_GUI_NORMAL);
 
   cv::Mat frame;
